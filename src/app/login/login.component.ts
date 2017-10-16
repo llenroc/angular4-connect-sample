@@ -14,7 +14,7 @@ import { AuthService } from '../auth/auth.service';
   <!-- App navigation bar markup. -->
   <div class="ms-NavBar">
     <ul class="ms-NavBar-items">
-      <li class="navbar-header">Microsoft Graph Connect sample</li>
+      <li class="ms-NavBar-item">Microsoft Graph Connect sample</li>
     </ul>
   </div>
 
