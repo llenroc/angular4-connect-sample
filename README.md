@@ -6,24 +6,17 @@
 * [Prerequisites](#prerequisites)
 * [Register the application](#register-the-application)
 * [Build and run the sample](#build-and-run-the-sample)
-* [Code of note](#code-of-note)
 * [Questions and comments](#questions-and-comments)
 * [Contributing](#contributing)
 * [Additional resources](#additional-resources)
 
 ## Introduction
 
-This sample shows how to connect an Angular 4.0 app to a Microsoft work or school (Azure Active Directory) using the [Microsoft Graph API](https://developer.microsoft.com/en-us/graph/) with the [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) to get a user's calendar events and upload information about them to an Excel file stored in OneDrive.
+This sample shows how to connect an Angular 4 app to a Microsoft work or school (Azure Active Directory) or personal (Microsoft) account  using the Microsoft Graph API with the [Microsoft Graph JavaScript SDK](https://github.com/microsoftgraph/msgraph-sdk-javascript) to send an email. In addition, the sample uses the Office Fabric UI for styling and formatting the user experience.
 
-![image](https://user-images.githubusercontent.com/3375461/28985978-e5d3ea26-7919-11e7-8a69-a52bccd3f46b.png)
+![Microsoft Graph Connect sample screenshot](./readme-images/screenshot.png)
 
-Once you authenticate and authorize the application, it gets one page of events from the user's calendar.
-
-![image](readme-images/Angular4ScreenShot.png)
-
-When you click the **Write to Excel** button, the application writes the contacts to an Excel file stored in the user's root OneDrive folder.
-
-![image](readme-images/ExcelScreenShot.png)
+This sample uses the [Microsoft Authentication Library Preview for JavaScript (msal.js)](https://github.com/AzureAD/microsoft-authentication-library-for-js) to get an access token.
 
 ## Prerequisites
 
@@ -31,7 +24,6 @@ To use this sample, you need the following:
 * [Node.js](https://nodejs.org/). Node is required to run the sample on a development server and to install dependencies. 
 * [Angular CLI](https://github.com/angular/angular-cli)
 * Either a [Microsoft account](https://www.outlook.com) or [Office 365 for business account](https://msdn.microsoft.com/en-us/office/office365/howto/setup-development-environment#bk_Office365Account)
-* Upload the **demo.xlsx** file in the root of this repository to the root folder of your OneDrive account. This file contains an empty table with two columns.
 
 ## Register the application
 
@@ -80,7 +72,7 @@ This project has adopted the [Microsoft Open Source Code of Conduct](https://ope
 
 ## Questions and comments
 
-We'd love to get your feedback about this sample. You can send your questions and suggestions in the [Issues](https://https://github.com/jamescro/microsoft-graph-angular/issues) section of this repository.
+We'd love to get your feedback about this sample. You can send your questions and suggestions in the [Issues](https://https://github.com/microsoftgraph/angular4-connect-sample/issues) section of this repository.
 
 Questions about Microsoft Graph development in general should be posted to [Stack Overflow](https://stackoverflow.com/questions/tagged/microsoftgraph). Make sure that your questions or comments are tagged with [microsoftgraph].
   
